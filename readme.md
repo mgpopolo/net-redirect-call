@@ -6,7 +6,7 @@ In this tutorial we are going to use the callerid of the calling party to determ
 
 As usual you can find the full source code on [GitHub](https://github.com/sinch/net-redirect-call) or deploy directly to to you azure account if you want to try it out.
 
-<a href="https://azuredeploy.net/?repository=https://github.com/sinch/net-redirect-call/RedirectService" target="_blank">
+<a href="https://azuredeploy.net/?repository=https://github.com/sinch/net-redirect-call/" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
