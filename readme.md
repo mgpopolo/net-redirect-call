@@ -8,6 +8,7 @@ As usual you can find the full source code on [GitHub](https://github.com/sinch/
 <a href="https://azuredeploy.net/?repository=https://github.com/sinch/net-redirect-call" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
+
 The flow of the calls in this kind of solution looks like this
 <img src="http://www.websequencediagrams.com/files/render?link=pYJjAbI_xMYLY3GRziIW"/>
 The part we are going to implement in this tutorial is the Backend Part
