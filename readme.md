@@ -1,14 +1,19 @@
-# Build a number forwarding service
-<img src="http://i.giphy.com/9VR8sx8UmC5Ow.gif"/>
+# How to keep your customers phone number private in an Uber for X solution
 
 
 There is a number of use cases for number forwarding such as you want to have local presence in a country or a city. You want to protect your users privacy by not giving out or displaying their phone number. In this tutorial we are going to build a super simple API using c# where we redirect phone calls to a given number using our SVAML. 
 In this tutorial we are going to use the callerid of the calling party to determine where we connect the call. 
 
-As usual you can find the full source code on GitHub 
+As usual you can find the full source code on [GitHub](https://github.com/sinch/net-redirect-call) or deploy directly to to you azure account if you want to try it out.
+<a href="https://azuredeploy.net/?repository=https://github.com/sinch/net-redirect-call" target="_blank">
+    <img src="http://azuredeploy.net/deploybutton.png"/>
+</a>
+The flow of the calls in this kind of solution looks like this
+<img src="http://www.websequencediagrams.com/files/render?link=pYJjAbI_xMYLY3GRziIW"/>
+The part we are going to implement in this tutorial is the Backend Part
 
 ## Prerequisites 
-1. Sinch account and an app with keys [Signup here ](https://www.sinch.com/signup "Signup")
+1. Sinch account and an app with keys [Signup here ](https://www.sinch.com/signup)
 2. A phone number rented from Sinch [rent one here](https://www.sinch.com/dashboard/#/numbers) make sure its a voice number.
 
 ## Configure your app 
@@ -74,7 +79,7 @@ and you should see that we successfully added a config.
 ## Implementing the callback controller 
 Create WebAPI controller called **SinchController**, this controller will be responsible for parsing and responding to SVAML, Our CTO Bjorn Fransson has been good enough to make a nuget with the all the SVAML we support (including some undocumented features, can you spot them?). For a the list of supported SVAML check out the [documentation](https://www.sinch.com/docs/voice/rest/#callbackapi "Callback documentation") if you prefer to make it your self instead of nuget.
 
-```nuget
+```nugetgithub
 install-package Sinch.Callback
 ```
 And now the actual code
@@ -108,4 +113,3 @@ As you can see in the above code its super simple to create some pretty nice fun
 This tutorial relies on callerid, this can be a littel bit flaky sinch the user might not display the caller id, in our experience it still works super well with Sinch and many of our customers rely on caller id for their solutions. Another way of implementing kind of the same functionality is to rent multiple numbers from us (how many you can determine with the maximum concurent number of calls you need to support) and connect to the right number using destination only. 
 
 
-Thanks to [giphy](http://giphy.com) for images 
