@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedirectService", "RedirectService\RedirectService\RedirectService.csproj", "{33AD2865-F82F-41C3-91C6-D64E20BF4786}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DC7D26F6-9DDF-4084-8401-F5DD41486889}"
 	ProjectSection(SolutionItems) = preProject
 		RedirectService\.nuget\NuGet.Config = RedirectService\.nuget\NuGet.Config
@@ -14,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DC7D26
 		RedirectService\.nuget\NuGet.targets = RedirectService\.nuget\NuGet.targets
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedirectService", "RedirectService\RedirectService.csproj", "{33AD2865-F82F-41C3-91C6-D64E20BF4786}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
