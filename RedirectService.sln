@@ -8,8 +8,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DC7D26F6-9DDF-4084-8401-F5DD41486889}"
 	ProjectSection(SolutionItems) = preProject
 		RedirectService\.nuget\NuGet.Config = RedirectService\.nuget\NuGet.Config
+		.nuget\NuGet.Config = .nuget\NuGet.Config
 		RedirectService\.nuget\NuGet.exe = RedirectService\.nuget\NuGet.exe
+		.nuget\NuGet.exe = .nuget\NuGet.exe
 		RedirectService\.nuget\NuGet.targets = RedirectService\.nuget\NuGet.targets
+		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Global
