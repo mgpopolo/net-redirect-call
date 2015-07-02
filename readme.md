@@ -7,11 +7,11 @@ In this tutorial we are going to use the callerid of the calling party to determ
 As usual you can find the full source code on [GitHub](https://github.com/sinch/net-redirect-call) or deploy directly to to you azure account if you want to try it out.
 
 <a href="https://azuredeploy.net/?repository=https://github.com/sinch/net-redirect-call/" target="_blank">
-    <img src="https://azuredeploy.net/deploybutton.png"/>
+    <img src="images/deploybutton.png"/>
 </a>
 
 The flow of the calls in this kind of solution looks like this
-<img src="https://www.websequencediagrams.com/files/render?link=pYJjAbI_xMYLY3GRziIW"/>
+<img src="images/napkin-diagram.png"/>
 The part we are going to implement in this tutorial is the Backend Part
 
 ## Prerequisites 
@@ -20,7 +20,7 @@ The part we are going to implement in this tutorial is the Backend Part
 
 ## Configure your app 
 Once you have a phone number in my case +1 213-454-0537 assign it to your app by clicking on the pen and then Voice: 
-![](images/configureapp.png)
+![configure your app](images/configureapp.png)
 and enter a callbackurl, this is the URL the Sinch service will hit when there is a call happening associated to your app. 
  
 ## Code!
